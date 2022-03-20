@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
-public class Grabbable : MonoBehaviour
+public class Grabbable : XRGrabInteractable
 {
-    public bool grabbed = false;
-    public void grabToggle() {
-        grabbed = !grabbed;
-        if (grabbed) gameObject.layer = 6;
-        else Invoke(setNormal(), 1);
+    protected override void OnSelectEntered(SelectEnterEventArgs args)
+    {
+        setNotCollidable();
+        base.OnSelectEntered(args);
     }
 
-    private string setNormal() {
+    protected override async void OnSelectExited(SelectExitEventArgs args)
+    {
+        base.OnSelectExited(args);
+        Invoke("setNotCollidable", 1000);
+    }
+
+    private string setCollidable()
+    {
         gameObject.layer = 0;
+        return "";
+    }
+
+    private string setNotCollidable()
+    {
+        gameObject.layer = 6;
         return "";
     }
 
