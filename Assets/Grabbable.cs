@@ -14,7 +14,7 @@ public class Grabbable : XRGrabInteractable
     protected override async void OnSelectExited(SelectExitEventArgs args)
     {
         base.OnSelectExited(args);
-        Invoke("setNotCollidable", 1000);
+        setCollidable();
     }
 
     private string setCollidable()

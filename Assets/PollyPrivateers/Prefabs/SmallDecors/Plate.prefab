@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23881716295105920}
   - component: {fileID: 64753050234159172}
   - component: {fileID: 2778402719111928149}
-  - component: {fileID: -9159874749995507203}
+  - component: {fileID: 877047326381300565}
   m_Layer: 0
   m_Name: Plate
   m_TagString: Untagged
@@ -114,7 +114,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-9159874749995507203
+--- !u!114 &877047326381300565
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1603989296654298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 51b31d164a755aa4b9c43f8afa2eb8c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
