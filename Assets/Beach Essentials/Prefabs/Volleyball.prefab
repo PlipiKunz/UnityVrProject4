@@ -92,7 +92,6 @@ GameObject:
   - component: {fileID: 4528610391805142}
   - component: {fileID: 33123826597071948}
   - component: {fileID: 23210926992718712}
-  - component: {fileID: 5400188233660157256}
   m_Layer: 0
   m_Name: Volleyball_LOD0
   m_TagString: Untagged
@@ -163,20 +162,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5400188233660157256
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435203268381972}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: c71923256946c49c593eeeb3adb0590b, type: 3}
 --- !u!1 &1799704108992190
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,6 +174,7 @@ GameObject:
   - component: {fileID: 205781144301982602}
   - component: {fileID: 6227111092422754619}
   - component: {fileID: 8497972200222771967}
+  - component: {fileID: 6586260877817845514}
   m_Layer: 0
   m_Name: Volleyball
   m_TagString: Untagged
@@ -376,6 +362,19 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!135 &6586260877817845514
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799704108992190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.16
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1853668164716122
 GameObject:
   m_ObjectHideFlags: 0
